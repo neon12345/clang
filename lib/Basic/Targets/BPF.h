@@ -67,6 +67,7 @@ public:
 
   bool validateAsmConstraint(const char *&Name,
                              TargetInfo::ConstraintInfo &info) const override {
+    info.setAllowsRegister();
     return true;
   }
 
